@@ -1,0 +1,34 @@
+// Wildwood layout
+
+article {
+    // @include grid-row();
+
+    header {
+        @include flex-grid-row;
+        @include flex-align( center, stretch);
+        .inner {
+            // position: relative;
+        }
+    }
+    .navigation {
+        @include flex-grid-row;
+    }
+    section {
+        @include flex-grid-row;
+        &.intro {
+
+        }
+        &.prodcuts {
+
+        }
+        &.secondary {
+
+        }
+        &.about {
+
+        }
+    }
+    footer {
+        @include flex-grid-row;
+    }
+}
