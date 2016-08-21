@@ -8,7 +8,7 @@ article {
     header {
         @include flex-grid-row(collapse, 100%)
         @include flex-align(center, middle);
-        background: rgba(0,0,0, 0.6);
+        @include background-opacity(#000000, 0.6);
         height: 50px;
         z-index: 5000;
         &.title-bar {
@@ -36,7 +36,9 @@ article {
 }
 .orbit {
     @include orbit-wrapper;
+    margin-top: -50px;
     overflow: hidden;
+    z-index: 50;
     .orbit-container {
         @include orbit-container;
 
@@ -49,13 +51,13 @@ article {
                 display: none;
             }
             .standout {
-                background: rgba(0,0,0,0.2);
+                @include background-opacity(#000000, 0.6);
                 position: absolute;
                 top: 200px;
                 padding: 45px 0;
                 width: 100%;
                 text-align: center;
-                z-index: 200;
+                z-index: 50;
                 img {
 
                 }
@@ -84,9 +86,9 @@ article {
     background: transparent;
     border: 0;
     color: $c-light;
-    @include rotate(-0.7);
+    @include rotate(-0.5);
 
     #paving & {
-        @include rotate(0.7);
+        @include rotate(0.5);
     }
 }

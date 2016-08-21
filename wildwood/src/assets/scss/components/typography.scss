@@ -7,14 +7,19 @@ h3 {
 h1, h2, h3 {
 
 }
-
+.menu {
+    li {
+        font-family: $header-font-family;
+        font-weight: 900;
+    }
+}
 .callout {
     h1 {
         font-size: $lead-font-size * 2;
         margin-bottom: 0;
         & + h2 {
-            font-size: $lead-font-size * 1.75;
-            margin-top: 0;
+            font-size: $lead-font-size * 1.25;
+            margin-top: -15px;
             font-weight: 100;
 
             & + p {
@@ -24,5 +29,8 @@ h1, h2, h3 {
     }
     p {
         font-size: $global-font-size;
+    }
+    #about & {
+        color: $c-brown;
     }
 }

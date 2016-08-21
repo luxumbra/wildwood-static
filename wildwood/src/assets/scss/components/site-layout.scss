@@ -21,25 +21,34 @@ article {
         background: #444;
         &#timber {
             background: $c-dark-green;
+            @include box-shadow(3px, 3px, 5px, rgba(#000000,0.6));
+            z-index: 300;
 
         }
-        &#prodcuts {
-            background: $c-brown;
+        &#products {
+            @include box-shadow(0px, 0px, 5px, rgba(#000000,0.6), inset);
+            background: url("../img/Brownwoodtexture.Abstractbackground.jpg") no-repeat 0 0;
+            background-size: cover;
+            z-index: 300;
         }
         &#paving {
             background: $c-blue;
+            z-index: 300;
         }
         &#about {
+            @include box-shadow(0px, 0px, 5px, rgba(#000000,0.6), inset);
             background: $c-beige;
+            z-index: 300;
         }
         &#contact {
             background: $c-green;
+            z-index: 300;
         }
 
         // .row {
         //     @include grid-row;
             .columns {
-                @include grid-column(8);
+                @include grid-column(7);
                 @include grid-column-position(center);
             }
         // }
