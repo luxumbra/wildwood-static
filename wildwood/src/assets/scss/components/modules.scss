@@ -2,21 +2,31 @@
 
 article {
     // @include grid-row();
-
+    .sticky-container {
+        z-index: 3000;
+    }
     header {
-        @include grid-row;
-
-        .brand {
-            @include grid-columns(4);
-            order: 2;
-            img {
-                @include img-responsive;
-            }
+        @include flex-grid-row(collapse, 100%)
+        @include flex-align(center, middle);
+        background: rgba(0,0,0, 0.6);
+        height: 50px;
+        z-index: 5000;
+        &.title-bar {
+            width: 100%;
         }
-        & + div {
-            @include grid-column(4);
-
-            text-align: left;
+        .menu-centered {
+            margin: 0 auto;
+        }
+        .menu {
+            margin: 0 auto;
+            li {
+                a {
+                    color: $c-beige;
+                    &:hover {
+                        color: $c-green;
+                    }
+                }
+            }
         }
 
 
@@ -26,11 +36,7 @@ article {
 }
 .orbit {
     @include orbit-wrapper;
-    & > img {
-        position: absolute;
-        left: auto;
-        top: 300px;
-    }
+    overflow: hidden;
     .orbit-container {
         @include orbit-container;
 
@@ -42,6 +48,22 @@ article {
             figcaption {
                 display: none;
             }
+            .standout {
+                background: rgba(0,0,0,0.2);
+                position: absolute;
+                top: 200px;
+                padding: 45px 0;
+                width: 100%;
+                text-align: center;
+                z-index: 200;
+                img {
+
+                }
+                & + div {
+                    // @include grid-column(4);
+                    // text-align: left;
+                }
+            }
         }
         button {
             @include orbit-control;
@@ -52,5 +74,19 @@ article {
                 @include orbit-next;
             }
         }
+    }
+    .orbit-bullets {
+        margin-top: -4em;
+    }
+}
+
+.callout {
+    background: transparent;
+    border: 0;
+    color: $c-light;
+    @include rotate(-0.7);
+
+    #paving & {
+        @include rotate(0.7);
     }
 }
