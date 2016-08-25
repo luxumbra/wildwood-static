@@ -1,4 +1,5 @@
 $(document).foundation();
+
 window.sr = ScrollReveal({ reset: true });
 
 var fooReveal = {
@@ -29,4 +30,10 @@ var footerReveal = {
   duration: 700,
   viewFactor: 0.1
 };
-sr.reveal('li', fooReveal);
+sr.reveal('footer li', fooReveal);
+
+function parallax() {
+    var jarallax = new Jarallax();
+    jarallax.addAnimation('.parallaxed', [{progress: '0%', top: '100%'}, {progress: '100%', top: '0%'}]);
+}
+parallax();

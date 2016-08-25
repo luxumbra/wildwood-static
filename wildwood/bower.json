@@ -19,9 +19,10 @@
     "motion-ui": "~1.2.2",
     "animate.css": "^3.5.2",
     "velocity": "^1.2.3",
-    "scrollmagic": "^2.0.5",
     "foundation-icons": "*",
-    "foundation-icon-fonts": "*"
+    "foundation-icon-fonts": "*",
+    "scrollreveal": "^3.3.1",
+    "jarallax": "^1.7.0"
   },
   "private": true
 }
