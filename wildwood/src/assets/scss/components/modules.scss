@@ -92,3 +92,53 @@ article {
         @include rotate(0.5);
     }
 }
+
+.product-grid {
+    .column {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+footer {
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 25px;
+
+            a {
+                & > img {
+                    @include opacity(0.5);
+                    @include transition(opacity, .5s, ease-in-out);
+                }
+                &:hover {
+                   & > img {
+                       @include opacity(1);
+                   }
+                }
+            }
+            &.social-links {
+                a {
+                    display: inline-block;
+                    @include transition(all, .5s, ease-in-out);
+                    i {
+                        margin: 15px;
+                    }
+                    .large-icon {
+                        color: rgba($c-light,0.4);
+                        font-size: $global-font-size-xlarge;
+                        @include transition(all, .5s, ease-in-out);
+                        @include mui-animation(slide, fade, spin(120deg));
+                    }
+                    &:hover {
+
+                        .large-icon {
+                            color: rgba($c-light,0.8);
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

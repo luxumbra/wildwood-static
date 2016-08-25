@@ -9,7 +9,9 @@
     <title>Wildwood Timber Products</title>
     <script src="https://use.typekit.net/lsy6xry.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+
   </head>
   <body>
   <article>
@@ -21,5 +23,31 @@
     {{> footer }}
   </article>
     <script src="{{root}}assets/js/app.js"></script>
+<!--     <script>
+    window.sr = ScrollReveal();
+
+    // Add class to <html> if ScrollReveal is supported
+    if (sr.isSupported()) {
+      document.documentElement.classList.add('sr');
+    }
+    var fooReveal = {
+      delay    : 700,
+      viewFactor: 0.5,
+      // distance : '90px',
+      easing   : 'ease-in-out',
+      rotate   : { z: 8 },
+      scale    : 1.1
+    };
+    var calloutReveal = {
+      delay    : 500,
+      viewFactor: 0.2,
+      // distance : '90px',
+      easing   : 'ease-in-out',
+      rotate   : { z: 3 },
+      scale    : 1.2
+    };
+    sr.reveal('.product-grid .column', fooReveal);
+    sr.reveal('.callout', calloutReveal);
+    </script> -->
   </body>
 </html>

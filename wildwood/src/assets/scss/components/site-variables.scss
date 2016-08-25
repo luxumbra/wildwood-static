@@ -3,9 +3,12 @@
 // colors
 $c-light: #ffffff;
 $c-brown: #776045;
+$c-dark-brown: #402e1e;
 $c-blue: #0092b2;
 $c-beige: #dfd3b6;
 $c-green: #a8c545;
 $c-dark-green: #779c2b;
 
-$global-font-size-larger: $global-font-size * 1.5
+$global-font-size: 110%;
+$global-font-size-larger: $global-font-size * 1.5;
+$global-font-size-xlarge: $global-font-size * 2;

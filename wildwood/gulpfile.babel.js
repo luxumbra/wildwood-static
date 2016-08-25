@@ -26,7 +26,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, javascript, copyfonts, images, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -44,7 +44,9 @@ function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
 }
-
+function copyfonts() {
+  return gulp.src('./bower_components/foundation-icon-fonts/**/*.{ttf,woff,eoff,svg}').pipe(gulp.dest('dist/assets/css'));
+};
 // Copy page templates into finished HTML files
 function pages() {
   return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
@@ -139,4 +141,5 @@ function watch() {
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
+  gulp.watch(['src/assets/scss/**/* {tff,woff,eof,svg}.']['copyfonts'])
 }

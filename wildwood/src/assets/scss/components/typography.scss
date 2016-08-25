@@ -34,3 +34,19 @@ h1, h2, h3 {
         color: $c-brown;
     }
 }
+
+footer {
+
+    & > div {
+        color: rgba($c-light,0.7);
+        text-align: center;
+
+        a {
+            color: rgba($c-light,0.7);
+            @include transition(color, .5s, ease-in-out);
+            &:hover {
+                color: rgba($c-beige,0.7);
+            }
+        }
+    }
+}

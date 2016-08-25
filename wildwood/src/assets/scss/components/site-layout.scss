@@ -14,7 +14,7 @@ article {
         // @include flex-grid-row;
     }
     section {
-        @include grid-row;
+        @include grid-column;
         // @include flex-grid-row-align(center, middle);
 
         padding: 80px 0;
@@ -30,6 +30,11 @@ article {
             background: url("../img/Brownwoodtexture.Abstractbackground.jpg") no-repeat 0 0;
             background-size: cover;
             z-index: 300;
+
+            .product-grid {
+                 @include grid-column(10);
+                 @include grid-column-position(center);
+            }
         }
         &#paving {
             background: $c-blue;
@@ -54,6 +59,12 @@ article {
         // }
     }
     footer {
-        @include flex-grid-row;
+        @include grid-column;
+        background: $c-dark-brown;
+        padding: 80px 0;
+        & div {
+            @include grid-column(7);
+            @include grid-column-position(center);
+        }
     }
 }

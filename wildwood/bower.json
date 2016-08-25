@@ -16,7 +16,12 @@
   ],
   "dependencies": {
     "foundation-sites": "~6.2.3",
-    "motion-ui": "~1.2.2"
+    "motion-ui": "~1.2.2",
+    "animate.css": "^3.5.2",
+    "velocity": "^1.2.3",
+    "scrollmagic": "^2.0.5",
+    "foundation-icons": "*",
+    "foundation-icon-fonts": "*"
   },
   "private": true
 }
