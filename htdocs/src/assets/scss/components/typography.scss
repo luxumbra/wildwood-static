@@ -16,8 +16,19 @@ a {
         font-size: $global-font-size-larger;
         font-weight: 400;
         margin-right: 30px;
+        @include breakpoint(medium down) {
+            margin-right: 15px;
+              font-size: $global-font-size - 10;
+        }
+        @include breakpoint(small down) {
+            margin-right: 15px;
+            font-size: $global-font-size - 10;
+        }
         a {
             padding: 10px 20px;
+            @include breakpoint(small down) {
+              padding: 10px 10px;
+            }
         }
     }
 }
@@ -25,15 +36,22 @@ a {
     h1 {
         font-size: $lead-font-size * 2;
         margin-bottom: 0;
+        @include breakpoint(small down) {
+          font-size: $lead-font-size *1.75;
+        }
         & + h2 {
             font-size: $lead-font-size * 1.25;
             margin-top: -15px;
             font-weight: 100;
 
+            @include breakpoint(small down) {
+              // font-size: $lead-font-size;
+            }
             & + p {
                 font-size: $global-font-size-larger;
             }
         }
+
     }
     p {
         font-size: $global-font-size;

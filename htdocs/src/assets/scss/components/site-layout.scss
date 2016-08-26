@@ -19,6 +19,13 @@ article {
 
         padding: 80px 0;
         background: #444;
+
+        @include breakpoint(medium down) {
+          padding: 40px 0;
+        }
+        @include breakpoint(small down) {
+          padding: 40px 0;
+        }
         &#timber {
             background: $c-dark-green;
             @include box-shadow(3px, 3px, 5px, rgba(#000000,0.6));
@@ -59,21 +66,40 @@ article {
             z-index: 300;
         }
 
-        // .row {
-        //     @include grid-row;
-            .columns {
-                @include grid-column(7);
+        .columns {
+            @include grid-column(7);
+            @include grid-column-position(center);
+            @include breakpoint(medium down) {
+                @include grid-column(11);
                 @include grid-column-position(center);
             }
-        // }
+            @include breakpoint(small down) {
+                @include grid-column(11);
+                @include grid-column-position(center);
+            }
+        }
     }
     footer {
         @include grid-column;
         background: $c-dark-brown;
         padding: 80px 0;
+        @include breakpoint(medium down) {
+          padding: 40px 0;
+        }
+        @include breakpoint(small down) {
+          padding: 40px 0;
+        }
         & div {
             @include grid-column(8);
             @include grid-column-position(center);
+            @include breakpoint(medium down) {
+                @include grid-column(12);
+                @include grid-column-position(center);
+            }
+            @include breakpoint(small down) {
+              @include grid-column(12);
+              @include grid-column-position(center);
+            }
         }
     }
 }
