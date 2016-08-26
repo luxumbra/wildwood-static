@@ -26,11 +26,12 @@
         <header class="title-bar" data-sticky data-options="marginTop:0;" data-top-anchor="3">
                  
                      <div class="menu-centered">
-                         <ul class="menu simple expanded vertical medium-horizontal" >
-                           <li><a href="#">timber products</a></li>
-                           <li><a href="#">wildwood paving</a></li>
-                           <li><a href="#">about wildwood</a></li>
-                           <li><a href="#">contact us</a></li>
+                         <ul class="menu simple expanded vertical medium-horizontal"  data-magellan>
+                           <li><a href="#timber">timber products</a></li>
+                           <li><a href="#products">gallery</a></li>
+                           <li><a href="#paving">wildwood paving</a></li>
+                           <li><a href="#about">about wildwood</a></li>
+                           <li><a href="#contact">contact us</a></li>
                          </ul>
                      </div>
         </header>
@@ -38,11 +39,12 @@
     
     <!-- 
     <div class="menu-centered">
-        <ul class="menu simple expanded vertical medium-horizontal" >
-          <li><a href="#">timber products</a></li>
-          <li><a href="#">wildwood paving</a></li>
-          <li><a href="#">about wildwood</a></li>
-          <li><a href="#">contact us</a></li>
+        <ul class="menu simple expanded vertical medium-horizontal"  data-magellan>
+          <li><a href="#timber">timber products</a></li>
+          <li><a href="#products">gallery</a></li>
+          <li><a href="#paving">wildwood paving</a></li>
+          <li><a href="#about">about wildwood</a></li>
+          <li><a href="#contact">contact us</a></li>
         </ul>
     </div>
  -->
@@ -99,7 +101,7 @@
         </nav>
     </div>
     
-          <section id="timber" class="align-center">
+          <section id="timber" class="align-center" data-magellan-target="timber">
             <!-- <div class="large-12 medium-12 columns"> -->
               <!-- Grid Example -->
         
@@ -115,7 +117,7 @@
               </div>
             <!-- </div> -->
           </section>
-          <section id="products">
+          <section id="products" data-magellan-target="products">
         
             <!-- <div class="large-12 medium-12 columns"> -->
               <!-- Grid Example -->
@@ -148,7 +150,7 @@
               <div class="parallaxed"></div>
             <!-- </div> -->
           </section>
-          <section id="paving" class="align-center">
+          <section id="paving" class="align-center" data-magellan-target="paving">
             <!-- <div class="large-12 medium-12 columns"> -->
               <!-- Grid Example -->
         
@@ -164,7 +166,7 @@
               </div>
             </div>
           </section>
-          <section id="about" class="align-center">
+          <section id="about" class="align-center" data-magellan-target="about">
             <!-- <div class="large-12 medium-12 columns"> -->
               <!-- Grid Example -->
         
@@ -180,15 +182,16 @@
               </div>
             <!-- </div> -->
           </section>
-          <section id="contact" class="align-center">
+          <section id="contact" class="align-center" data-magellan-target="contact">
             <!-- <div class="large-12 medium-12 columns"> -->
               <!-- Grid Example -->
         
               <div class="align-center">
                 <div class="columns">
                   <div class="callout">
-                      <h1>We also do paving</h1>
-                      <h2>This is a twelve column section in a row. </h2>
+                      <h1>Make an enquiry, tell us we’re great or just say “hi!”...</h1>
+                      <h2>tel: 01234567890. mob: 07234567890. <br />
+                      email: workshop@wildwoodtimberproducts.co.uk</h2>
                       <p>In ac velit ante. Nam lacinia nunc id risus feugiat laoreet. Curabitur rutrum massa nibh, eget imperdiet ligula semper sit amet.</p>
                     <p> Vivamus at turpis ac lacus dapibus commodo. Etiam turpis nibh, mollis sit amet aliquet nec, maximus id est. Vivamus dictum eros convallis dolor commodo, rutrum vulputate nunc ullamcorper. Cras non libero blandit, eleifend magna id, sollicitudin magna. Integer lacus dui, placerat et commodo vel, gravida nec turpis. Pellentesque gravida massa ac lorem aliquet, ac condimentum elit tincidunt. Quisque nisl enim, dignissim vitae tristique id, commodo ac felis. Phasellus nec tellus vel nisl laoreet iaculis. Nunc pellentesque velit sed scelerisque lobortis. Donec metus nulla, pulvinar eget viverra et, condimentum non nibh. Vivamus pretium dolor ut diam mollis, id lobortis nibh pharetra. Etiam a risus erat. Aliquam placerat egestas nulla at faucibus.</p>
                   </div>
