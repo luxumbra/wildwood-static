@@ -122,16 +122,16 @@ article {
                 width: 100%;
 
                 h3 {
-                    @include grid-column(7);
+                    @include grid-column(9);
                     font-family: 'iskra', sans-serif;
                     font-size: $lead-font-size * 1.125;
                     color: $c-beige;
                     text-align: left;
-                    padding-left: 0 !important;
+                    padding: 0 !important;
                     margin: 0 !important;
 
                     & + p {
-                        @include grid-column(5);
+                        @include grid-column(3);
                         color: $c-beige;
                         font-family: 'iskra', sans-serif;
                         font-size: $lead-font-size * 1.125;
