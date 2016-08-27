@@ -1,5 +1,7 @@
 // Wildwood layout
-
+.no-reveals {
+    visibility: hidden;
+}
 article {
     // @include grid-row();
 
