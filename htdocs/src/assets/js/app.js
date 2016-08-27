@@ -1,6 +1,6 @@
 $(document).foundation();
 
-if (!feature.cssTransition) {
+if (feature.cssTransition == false) {
     $("html").addClass("no-reveals");
 } else {
     $("html").addClass("do-reveals");
