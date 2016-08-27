@@ -113,7 +113,7 @@ article {
             }
             figcaption {
                 @include grid-row();
-                background: rgba($c-blue, 0.7);
+                background: rgba($c-dark-brown, 0.7);
                 border: 3px solid $c-light;
                 border-top-width: 0;
                 position: absolute;
@@ -124,7 +124,7 @@ article {
                 h3 {
                     @include grid-column(7);
                     font-family: 'iskra', sans-serif;
-                    font-size: $lead-font-size * 1.25;
+                    font-size: $lead-font-size * 1.125;
                     color: $c-beige;
                     text-align: left;
                     padding-left: 0 !important;
@@ -134,7 +134,7 @@ article {
                         @include grid-column(5);
                         color: $c-beige;
                         font-family: 'iskra', sans-serif;
-                        font-size: $lead-font-size * 1.25;
+                        font-size: $lead-font-size * 1.125;
                         font-weight: 900;
                         text-align: right;
                         padding: 0 !important;
