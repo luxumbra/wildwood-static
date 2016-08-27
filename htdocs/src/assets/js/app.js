@@ -27,7 +27,7 @@ window.sr = ScrollReveal({ reset: true });
       viewFactor: 0.1,
       mobile: false,
     };
-    sr.reveal('.do-reveals .callout', fooReveal);
+    // sr.reveal('.do-reveals .callout', fooReveal);
 
     var footerReveal = {
       delay    : 200,
