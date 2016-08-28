@@ -112,7 +112,7 @@ article {
                 margin-bottom: 0;
             }
             figcaption {
-                @include grid-row();
+                // @include grid-row();
                 background: rgba($c-dark-brown, 0.7);
                 border: 3px solid $c-light;
                 border-top-width: 0;
@@ -122,7 +122,7 @@ article {
                 width: 100%;
 
                 h3 {
-                    @include grid-column(9);
+                    // @include grid-column(10);
                     font-family: 'iskra', sans-serif;
                     font-size: $lead-font-size * 1.125;
                     color: $c-beige;
@@ -131,12 +131,12 @@ article {
                     margin: 0 !important;
 
                     & + p {
-                        @include grid-column(3);
+                        // @include grid-column(2);
                         color: $c-beige;
                         font-family: 'iskra', sans-serif;
-                        font-size: $lead-font-size * 1.125;
-                        font-weight: 900;
-                        text-align: right;
+                        font-size: $lead-font-size;
+                        font-weight: 500;
+                        text-align: left;
                         padding: 0 !important;
                         margin: 0 !important;
                     }
@@ -146,11 +146,72 @@ article {
                     font-size: $global-font-size;
                     line-height: $subheader-lineheight - 0.2;
                     text-align: left;
-                    display: inline-block;
+                    // display: inline-block;
                 }
             }
         }
     }
+}
+.reveal {
+    background: rgba($c-blue, 0.9);
+    border-radius: 5px;
+    padding: 45px 80px;
+
+    .reveal-slider {
+        min-height: 428px !important;
+        height: auto;
+        .orbit {
+            @include orbit-wrapper;
+            position: relative;
+            margin: 0;
+            z-index: 400;
+            .orbit-container {
+                @include orbit-container;
+                position: relative;
+                height: 450px !important;
+                .orbit-slide {
+                    box-shadow: 0 0 5px rgba(#000000, 0.6) inset;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .reveal-header {
+        // @include grid-row;
+        h3 {
+            @include grid-column(7);
+            color: $c-beige;
+            font-size: $global-font-size-xlarge;
+            font-weight: 900;
+            padding: 0 !important;
+        }
+        .price {
+            @include grid-column(5);
+           color: $c-beige;
+           font-size: $global-font-size-xlarge * 1.125;
+           line-height: 1.3;
+           font-weight: 900;
+           margin-bottom: 0;
+           text-align: right;
+           padding: 0 !important;
+        }
+    }
+    .reveal-content {
+        p:first-child {
+            font-size: $global-font-size-larger;
+            line-height: 1.3;
+            display: inline-block;
+        }
+    }
+
+    p {
+        color: $c-beige;
+        font-size: $global-font-size-medium;
+    }
+    .close-button {
+        color: $c-light;
+    }
+
 }
 footer {
     ul {

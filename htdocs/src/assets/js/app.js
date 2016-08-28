@@ -39,6 +39,8 @@ window.sr = ScrollReveal({ reset: true });
       mobile: false,
     };
     sr.reveal('footer li', fooReveal);
+
+    // var productSlider = new Foundation.Orbit($('.reveal-slider .orbit'), {'data-auto-play: False'});
 // function parallax() {
 //     var jarallax = new Jarallax();
 //     jarallax.addAnimation('.parallaxed', [{progress: '0%', top: '100%'}, {progress: '100%', top: '0%'}]);
