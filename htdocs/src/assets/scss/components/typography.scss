@@ -42,6 +42,11 @@ header .menu.simple {
               padding: 10px 10px;
             }
         }
+        &:first-child {
+            a {
+                padding: 0;
+            }
+        }
     }
 }
 .callout {
