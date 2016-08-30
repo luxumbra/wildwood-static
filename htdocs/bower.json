@@ -23,7 +23,8 @@
     "foundation-icons": "*",
     "foundation-icon-fonts": "*",
     "scrollreveal": "^3.3.1",
-    "jarallax": "^1.7.0"
+    "jarallax": "^1.7.0",
+    "parallax.js": "^1.4.2"
   },
   "private": true
 }

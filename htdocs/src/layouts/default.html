@@ -22,13 +22,34 @@
 
   </head>
   <body>
+
   <article id="home">
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+        <!-- Close button -->
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <!-- Menu -->
+        <ul class="vertical menu">
+        <li><a href="#home">top</a></li>
+        <li><a href="#timber">timber products</a></li>
+        <li><a href="#products">gallery</a></li>
+        <li><a href="#paving">wildwood paving</a></li>
+        <li><a href="#about">about wildwood</a></li>
+        <li><a href="#contact">contact us</a></li>
+        </ul>
+      </div>
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> header }}
     <!-- {{> navigation }} -->
     {{> slider }}
     {{> body.home }}
     {{> footer }}
+        </div>
+    </div>
   </article>
     <script src="{{root}}assets/js/app.js"></script>
   </body>

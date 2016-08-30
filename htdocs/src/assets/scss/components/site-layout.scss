@@ -1,20 +1,19 @@
 // Wildwood layout
+
+body {
+    background: $c-dark-brown;
+}
 .no-reveals {
     visibility: hidden;
 }
 article {
-    // @include grid-row();
+    width: 100%;
+    overflow-x: hidden;
 
     header {
         @include flex-grid-row;
-        // @include flex-align( center, stretch);
-        .inner {
-            // position: relative;
-        }
     }
-    .navigation {
-        // @include flex-grid-row;
-    }
+
     section {
         @include grid-column;
         // @include flex-grid-row-align(center, middle);
@@ -33,25 +32,29 @@ article {
             @include box-shadow(3px, 3px, 5px, rgba(#000000,0.6));
             z-index: 300;
 
+            & > div {
+
+            }
+
         }
         &#products {
+            background: transparent;
             @include box-shadow(0px, 0px, 5px, rgba(#000000,0.6), inset);
             position: relative;
             .parallaxed {
-                position: absolute;
-                background: #fff url("../img/Brownwoodtexture.Abstractbackground@0.75x.jpg") no-repeat 0 0;
-                background-size: cover;
-                z-index: 0;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
+                background: transparent url("../img/Brownwoodtexture.Abstractbackground@0.75x.jpg") repeat-y 0 0;
             }
             .product-grid {
                 position: relative;
-                 @include grid-column(10);
+                 @include grid-column(12);
                  @include grid-column-position(center);
                  z-index: 10;
+
+                 .column {
+                    // @include breakpoint(large down) {
+                      @include grid-column(6);
+                    // }
+                 }
             }
         }
         &#paving {
@@ -64,13 +67,22 @@ article {
             z-index: 300;
         }
         &#contact {
-            background: $c-green;
+            position: relative;
+            background: $c-dark-brown;
             z-index: 300;
+
+            .parallaxed {
+                background: url("../img/greenbarktexture@0.75x.jpg") no-repeat 0 0;
+            }
         }
 
         .columns {
             @include grid-column(7);
             @include grid-column-position(center);
+            @include breakpoint(xlarge down) {
+                @include grid-column(10);
+                @include grid-column-position(center);
+            }
             @include breakpoint(medium down) {
                 @include grid-column(11);
                 @include grid-column-position(center);
@@ -83,7 +95,8 @@ article {
     }
     footer {
         @include grid-column;
-        background: $c-dark-brown;
+        background: $c-dark-brown url('../img/footer-base.jpg') no-repeat center bottom;
+        background-size: 100%;
         padding: 80px 0;
         @include breakpoint(medium down) {
           padding: 40px 0;
