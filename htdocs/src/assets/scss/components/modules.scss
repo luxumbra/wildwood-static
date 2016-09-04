@@ -21,7 +21,7 @@ article {
                     height: 3px;
                 }
             }
-            .title-bar-left {
+            .top-bar-left {
                 .title-bar-title {
                     // width: 100px;
                 }
@@ -29,6 +29,8 @@ article {
             .title-bar {
                 background: $c-dark-green;
                 margin-bottom: 3px;
+                width: auto;
+
             }
 
         }
@@ -65,6 +67,7 @@ article {
             }
             &.vertical {
                 background: $c-dark-brown;
+                margin-top: 30px;
               a {
                 background: $c-dark-brown;
                 color: $c-beige;
