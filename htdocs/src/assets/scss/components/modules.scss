@@ -183,7 +183,7 @@ article {
           @include flex-grid-column(6, 20px);
         }
         @include breakpoint(small down) {
-          @include flex-grid-column(12, 10px);
+          @include flex-grid-column(8, 10px);
         }
 
         text-align: center;
@@ -203,6 +203,10 @@ article {
                 bottom: 0;
                 padding: 0 20px;
                 width: 100%;
+
+                @include breakpoint(small down) {
+                  // @include flex-grid-column(12, 10px);
+                }
 
                 h3 {
                     // @include grid-column(10);
