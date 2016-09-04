@@ -180,10 +180,10 @@ article {
           @include flex-grid-column(6, 20px);
         }
         @include breakpoint(medium down) {
-          @include flex-grid-column(6, 20px);
+          @include flex-grid-column(12, 0px);
         }
         @include breakpoint(small down) {
-          @include flex-grid-column(8, 10px);
+          @include flex-grid-column(12, 0px);
         }
 
         text-align: center;
