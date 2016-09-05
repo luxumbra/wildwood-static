@@ -1,18 +1,57 @@
   <section id="contact" class="align-center" data-magellan-target="contact">
-    <!-- <div class="large-12 medium-12 columns"> -->
-      <!-- Grid Example -->
-
-      <div class="align-center">
-        <div class="columns">
-          <div class="callout">
-              <h1>Make an enquiry, tell us we’re great or just say “hi!”...</h1>
-              <h2>tel: 01234567890. mob: 07234567890. <br />
-              email: workshop@wildwoodtimberproducts.co.uk</h2>
-              <p>In ac velit ante. Nam lacinia nunc id risus feugiat laoreet. Curabitur rutrum massa nibh, eget imperdiet ligula semper sit amet.</p>
-            <p> Vivamus at turpis ac lacus dapibus commodo. Etiam turpis nibh, mollis sit amet aliquet nec, maximus id est. Vivamus dictum eros convallis dolor commodo, rutrum vulputate nunc ullamcorper. Cras non libero blandit, eleifend magna id, sollicitudin magna. Integer lacus dui, placerat et commodo vel, gravida nec turpis. Pellentesque gravida massa ac lorem aliquet, ac condimentum elit tincidunt. Quisque nisl enim, dignissim vitae tristique id, commodo ac felis. Phasellus nec tellus vel nisl laoreet iaculis. Nunc pellentesque velit sed scelerisque lobortis. Donec metus nulla, pulvinar eget viverra et, condimentum non nibh. Vivamus pretium dolor ut diam mollis, id lobortis nibh pharetra. Etiam a risus erat. Aliquam placerat egestas nulla at faucibus.</p>
-          </div>
-        </div>
+    <div class="columns">
+      <div class="callout">
+          <h1>Make an enquiry, tell us we’re great or just say “hi!”...</h1>
+          <h2>tel: 01234567890. mob: 07234567890. <br />
+          email: <a href="mailto:workshop@wildwoodtimberproducts.co.uk" title="Email Wildwood.">workshop@wildwoodtimberproducts.co.uk</a></h2>
+          <p>In ac velit ante. Nam lacinia nunc id risus feugiat laoreet. Curabitur rutrum massa nibh, eget imperdiet ligula semper sit amet.</p>
+          <form id="contact-form">
+            <div class="row">
+              <div class="medium-4 columns">
+                <label for="name">Name
+                  <input id="name" type="text" placeholder="Your name">
+                </label>
+              </div>
+              <div class="medium-4 columns">
+                <label for="email">Email address
+                  <input id="email" type="email" placeholder="bloggs@joe.im">
+                </label>
+              </div>
+              <div class="medium-4 columns">
+                <label for="tel">Telephone
+                  <input id="tel" type="tel" placeholder="01234567890">
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="medium-8 columns">
+                <label for="comment-area">Comment / Enquiry
+                  <textarea id="comment-area" name="comment-area" rows="7" cols="50" placeholder="Put your greeting here..."></textarea>
+                </label>
+              </div>
+              <div class="medium-4 columns button-area align-bottom">
+                <div class="row">
+                  <div class="columns medium-12">
+                    <fieldset">
+                      <legend>Newsletter</legend>
+                      <p>Would you like to recieve a monthly newsletter with offers, competitions and news from Wildwood?</p>
+                      <input id="opt-in" type="checkbox">
+                      <label for="opt-in">Sign up to the newsletter</label>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="columns medium-6">
+                     <input type="submit" class="button" value="Submit">
+                  </div>
+                  <div class="columns medium-6">
+                     <input type="reset" class="button" value="Reset">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
       </div>
-      <div class="parallaxed opaque"></div>
-    <!-- </div> -->
+    </div>
+    <div class="parallaxed opaque"></div>
   </section>

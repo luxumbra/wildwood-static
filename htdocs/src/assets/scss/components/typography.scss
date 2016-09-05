@@ -9,6 +9,10 @@ h1, h2, h3 {
 }
 a {
     @include transition(all, .3s, ease-in-out);
+    color: $c-green;
+    &:hover {
+        color: $c-dark-green;
+    }
 }
 header .menu.simple {
     li {
@@ -30,12 +34,12 @@ header .menu.simple {
             font-size: $global-font-size - 10;
         }
         a {
-            padding: 10px 20px;
+            padding: 8px 20px 10px 20px;
             @include breakpoint(large down) {
-                padding: 10px 10px;
+                padding: 8px 10px 10px;
             }
             @include breakpoint(small down) {
-              padding: 10px 10px;
+              padding: 8px 10px 10px;
             }
         }
         &:first-child {
@@ -48,14 +52,15 @@ header .menu.simple {
 .callout {
     h1 {
         font-size: $lead-font-size * 2;
+        line-height: $header-lineheight - 0.4;
         margin-bottom: 0;
         @include breakpoint(small down) {
           font-size: $lead-font-size *1.5;
           line-height: $header-lineheight - .4;
         }
         & + h2 {
-            font-size: $lead-font-size * 1.25;
-            margin-top: -15px;
+            font-size: $lead-font-size * 1.5;
+            margin-top: -5px;
             font-weight: 100;
 
             @include breakpoint(small down) {
@@ -73,6 +78,13 @@ header .menu.simple {
     }
     #about & {
         color: $c-brown;
+    }
+    #contact & {
+        h1 {
+            & + h2 {
+                margin-top: 0;
+            }
+        }
     }
 }
 
