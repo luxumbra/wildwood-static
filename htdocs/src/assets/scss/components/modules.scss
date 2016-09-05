@@ -8,12 +8,12 @@ article {
     header {
         @include flex-grid-row(collapse, 100%)
         @include flex-align(center, middle);
-        @include transition(all, .5s, ease-in-out);
         @include background-opacity($c-dark-brown, 0.95);
         // height: 75px;
         z-index: 5000;
         .top-bar {
             @include background-opacity($c-dark-brown, 0.95);
+            @include transition(all, .5s, ease-in-out);
             width: 100%;
 
             left: 0 !important;
@@ -60,9 +60,10 @@ article {
         .menu {
             margin: 0 auto;
             li {
-                @include flex-align(center, top);
+                @include flex-align(center, middle);
                 a {
                     color: $c-beige;
+                    @include border-radius(2px);
                     &:hover {
                         background: rgba($c-beige, 0.2 );
                         color: $c-green;
@@ -71,18 +72,22 @@ article {
                         height: 40px;
                     }
                 }
+                &:first-child {
+
+                }
             }
+
             &.vertical {
                 background: transparent;
               a {
-                // background: $c-dark-brown;
                 color: $c-beige;
+                font-size: 85%;
                   &:hover {
                       background: rgba($c-beige, 0.2 );
                       color: $c-green;
                   }
                   img {
-                      height: 40px;
+                      // height: 40px;
                   }
               }
             }
@@ -113,8 +118,12 @@ article {
 
     .orbit-container {
         @include orbit-container;
+
+        @include breakpoint(large down) {
+            min-height: 500px;
+        }
         @include breakpoint(small down) {
-            min-height: 200px;
+            min-height: 300px;
         }
         .orbit-slide {
             @include orbit-slide;
