@@ -354,7 +354,7 @@ article {
         }
         input {
             &[placeholder] {
-                color: $c-green;
+                color: $c-dark-green;
                 font-weight: 500;
             }
             &.button {
@@ -366,7 +366,7 @@ article {
             }
         }
         textarea {
-            color: $c-green;
+            color: $c-dark-green;
             font-weight: 500;
 
             &:focus {
