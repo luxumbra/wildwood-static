@@ -3,17 +3,20 @@
 article {
     // @include grid-row();
     .sticky-container {
-        z-index: 3000;
+        // z-index: 3000;
     }
     header {
         @include flex-grid-row(collapse, 100%)
         @include flex-align(center, middle);
         @include transition(all, .5s, ease-in-out);
-        height: 50px;
+        @include background-opacity($c-dark-brown, 0.95);
+        // height: 75px;
         z-index: 5000;
-        &.title-bar {
+        .top-bar {
             @include background-opacity($c-dark-brown, 0.95);
             width: 100%;
+
+            left: 0 !important;
 
             .menu-icon {
                 &::after {
@@ -30,13 +33,18 @@ article {
                 background: $c-dark-brown;
                 margin-bottom: 3px;
                 width: auto;
+                @include breakpoint(small down) {
+                    top: 140px;
+                }
 
+
+            }
+            &.is-stuck {
+                @include box-shadow(0px, 2px, 5px, rgba(#000000,0.7));
             }
 
         }
-        &.is-stuck {
-            @include box-shadow(0px, 2px, 5px, rgba(#000000,0.7));
-        }
+
         // .visible-for-small-only {
         //     @include breakpoint(largemed down) {
         //         display: block;
@@ -66,9 +74,9 @@ article {
                 }
             }
             &.vertical {
-                background: $c-dark-brown;
+                background: transparent;
               a {
-                background: $c-dark-brown;
+                // background: $c-dark-brown;
                 color: $c-beige;
                   &:hover {
                       background: rgba($c-beige, 0.2 );
@@ -100,12 +108,15 @@ article {
 }
 .orbit {
     @include orbit-wrapper;
-    margin-top: -50px;
-    overflow: hidden;
+    // margin-top: -50px;
+    // overflow: hidden;
     z-index: 50;
+
     .orbit-container {
         @include orbit-container;
-
+        @include breakpoint(small down) {
+            min-height: 200px;
+        }
         .orbit-slide {
             @include orbit-slide;
             h3 {
@@ -128,7 +139,7 @@ article {
                 }
                 @include breakpoint(small down) {
                     padding: 25px 0;
-                    top: 80px;
+                    top: 50px;
                 }
                 img {
 
@@ -204,7 +215,7 @@ article {
                 width: 100%;
 
                 @include breakpoint(small down) {
-                  // @include flex-grid-column(12, 10px);
+                  display: none;
                 }
 
                 h3 {

@@ -23,9 +23,11 @@
   <body id="root">
 
   <article id="home">
-    <div data-sticky-container>
-        <header class="title-bar sticky" data-options="marginTop:0;" style="width:100%" data-top-anchor="root" data-sticky>
-                     <div class="menu-centered hide-for-small-only">
+    
+        <header class="sticky-container" data-sticky-container>
+    
+                 <div class="top-bar sticky hide-for-small-only" data-options="marginTop:0;" style="width:100%" data-top-anchor="1" data-sticky>
+                     <div class="menu-centered">
                          <ul class="menu simple expanded vertical medium-horizontal"  data-magellan>
                            <li><a href="#home"><img src="assets/img/logo@0.5x.png" alt=""></a></li>
                            <li><a href="#timber">timber products</a></li>
@@ -35,46 +37,37 @@
                            <li><a href="#contact">contact us</a></li>
                          </ul>
                      </div>
-                 
-                 
-                     <div class="show-for-small-only">
-                 <!--       <div class="title-bar-left">
-                         <span class="title-bar-title"><img src="assets/img/logo@0.5x.png" alt=""></span>
-                         <ul class="vertical menu" data-accordion-menu>
-                           <li><a href="#home">Menu / Home</a>
-                               <ul class="menu vertical nested">
-                                   <li><a href="#timber">timber products</a></li>
-                                   <li><a href="#products">gallery</a></li>
-                                   <li><a href="#paving">wildwood paving</a></li>
-                                   <li><a href="#about">about wildwood</a></li>
-                                   <li><a href="#contact">contact us</a></li>
-                               </ul>
-                           </li>
-                 
-                         </ul>
-                       </div> -->
-                 
-                     <div class="title-bar" data-responsive-toggle="mobile-menu" data-hide-for="medium">
-                       <button class="menu-icon" type="button" data-toggle></button>
-                       <div class="title-bar-title"><img src="assets/img/logo@0.1x.png" alt=""></div>
-                     </div>
-                     <div class="top-bar" id="mobile-menu">
-                       <div class="top-bar-left">
-                         <ul class="vertical menu" data-dropdown-menu>
-                           <li class="menu-text">wildwood</li>
-                           <li><a href="#timber">timber products</a></li>
-                           <li><a href="#products">gallery</a></li>
-                           <li><a href="#paving">wildwood paving</a></li>
-                           <li><a href="#about">about wildwood</a></li>
-                           <li><a href="#contact">contact us</a></li>
-                         </ul>
-                       </div>
-                 
                  </div>
-        </header>
-    </div>
+                 
+                 
     
-    <!--     <div class="menu-centered hide-for-small-only">
+                     <div class="top-bar title-bar sticky show-for-small-only" data-options="marginTop:0;" style="width:100%" data-top-anchor="1" data-sticky>
+                         <div class="top-bar-title">
+                             <div data-responsive-toggle="mobile-menu" data-hide-for="medium">
+                               <button class="menu-icon" type="button" data-toggle></button>
+                             </div>
+                             <img src="assets/img/logo@0.1x.png" alt="">
+                         </div>
+                 
+                         <div id="mobile-menu">
+                           <div class="top-bar-left">
+                             <ul class="dropdown menu vertical" data-dropdown-menu>
+                               <li class="menu-text">wildwood</li>
+                               <li><a href="#timber">timber products</a></li>
+                               <li><a href="#products">gallery</a></li>
+                               <li><a href="#paving">wildwood paving</a></li>
+                               <li><a href="#about">about wildwood</a></li>
+                               <li><a href="#contact">contact us</a></li>
+                             </ul>
+                           </div>
+                         </div>
+                     </div>
+                 
+        </header>
+    
+    
+    <!-- <div class="top-bar sticky hide-for-small-only" data-options="marginTop:0;" style="width:100%" data-top-anchor="1" data-sticky>
+    <div class="menu-centered">
         <ul class="menu simple expanded vertical medium-horizontal"  data-magellan>
           <li><a href="#home"><img src="assets/img/logo@0.5x.png" alt=""></a></li>
           <li><a href="#timber">timber products</a></li>
@@ -84,14 +77,15 @@
           <li><a href="#contact">contact us</a></li>
         </ul>
     </div>
+</div>
 
 
  -->
     
     <div class="orbit" role="region" aria-label="Wildwood header slider" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
         <ul class="orbit-container">
-            <button class="orbit-previous" aria-label="previous"><span class="show-or-sr">Previous Slide</span> &#9664;&#xFE0E;</button>
-            <button class="orbit-next" aria-label="next"><span class="show-or-sr">Next Slide</span> &#9654;&#xFE0E;</button>
+    <!--         <button class="orbit-previous" aria-label="previous"><span class="show-or-sr">Previous Slide</span> &#9664;&#xFE0E;</button>
+            <button class="orbit-next" aria-label="next"><span class="show-or-sr">Next Slide</span> &#9654;&#xFE0E;</button> -->
             <li class="is-active orbit-slide">
                 <div class="inner">
                     <div class="standout">
@@ -132,12 +126,12 @@
                 </div>
             </li>
         </ul>
-        <nav class="orbit-bullets">
+    <!--     <nav class="orbit-bullets">
           <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
           <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
           <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
           <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-        </nav>
+        </nav> -->
     </div>
     
           <section id="timber" class="align-center" data-magellan-target="timber">
