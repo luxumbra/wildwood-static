@@ -84,7 +84,10 @@ article {
                 background: transparent;
               a {
                 color: $c-beige;
-                font-size: 85%;
+                @include breakpoint(medium down) {
+                    font-size: 83%;
+                }
+
                   &:hover {
                       background: rgba($c-beige, 0.2 );
                       color: $c-green;
@@ -123,10 +126,17 @@ article {
         @include orbit-container;
 
         @include breakpoint(large down) {
-            min-height: 500px;
+            min-height: 490px;
+        }
+
+        @include breakpoint(largemed down) {
+            min-height: 250px;
+        }
+        @include breakpoint(medium down) {
+            min-height: 225px;
         }
         @include breakpoint(small down) {
-            min-height: 300px;
+            min-height: 250px;
         }
         .orbit-slide {
             @include orbit-slide;

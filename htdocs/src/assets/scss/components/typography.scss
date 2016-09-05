@@ -24,7 +24,7 @@ header .menu.simple {
         }
 
         @include breakpoint(medium down) {
-            font-size: $global-font-size - 10;
+            font-size: $global-font-size - 30;
         }
         @include breakpoint(small down) {
             font-size: $global-font-size - 10;
